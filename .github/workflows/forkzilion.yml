@@ -22,14 +22,14 @@ jobs:
        - name: initialization
          continue-on-error: true
          run: |
-           git config --global user.name ${{ secrets.GITHUBNAME }}
-           git config --global user.email ${{ secrets.GITHUBMAIL }}
+           git config --global user.name ${{ secrets.githubname }}
+           git config --global user.email ${{ secrets.githubmail }}
            git config --global credential.helper store
-           echo "https://${{ secrets.GITHUBNAME }}:${{ secrets.GH_TOKEN }}@github.com" > ~/.git-credentials
+           echo "https://${{ secrets.githubname }}:${{ secrets.gh_token }}@github.com" > ~/.git-credentials
        - name: cloning repo
          continue-on-error: true
          run: |
-           git clone https://${{ secrets.GITHUBNAME }}:${{ secrets.GH_TOKEN }}@${{ secrets.CREDS }} forkzilion
+           git clone https://${{ secrets.githubname }}:${{ secrets.gh_token }}@${{ secrets.creds }} forkzilion
        - name: Running Forkzilion
          timeout-minutes: 350
          continue-on-error: true
