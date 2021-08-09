@@ -1,5 +1,5 @@
-branch=pruhsuperlite
-git clone -b $branch https://github.com/AbOuLfOoOoOuF/ProjectFizilion /root/Forkzilion
+branch=pruhsuperlight
+git clone -b $branch https://github.com/DunggVN/ProjectFizilion /root/Forkzilion
 cp forkzilion/config.env /root/Forkzilion/config.env
 cd /root/Forkzilion
 docker build . --rm --force-rm --compress --pull --file Dockerfile -t forkzilion
