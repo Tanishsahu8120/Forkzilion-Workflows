@@ -1,4 +1,4 @@
-branch=pruhsuperlight
+branch=pruh
 git clone -b $branch https://github.com/DunggVN/ProjectFizilion /root/Forkzilion
 cp forkzilion/config.env /root/Forkzilion/config.env
 cd /root/Forkzilion
